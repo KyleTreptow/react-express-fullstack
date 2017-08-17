@@ -1,0 +1,27 @@
+.app {
+  text-align: center; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small {
+  display: block;
+  margin-top: 8px;
+  color: #61DAFB; }
+
+.app-logo {
+  height: 80px; }
+
+.app-header {
+  background-color: #222;
+  padding: 20px;
+  color: #fff; }
+
+.content-section {
+  padding: 60px 0; }
+
+.app-intro {
+  font-size: large; }
+
+@media screen and (max-width: 767px) {
+  .table-responsive {
+    overflow-x: scroll; } }
+
+/*# sourceMappingURL=app.css.map */

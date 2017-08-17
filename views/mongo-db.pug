@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  section(id="main-content")
+    div(class="container")
+      h1 #{title}
+        small Subtitle to the Title
+      p Welcome to the #{title} page of the Node/Express Project
+            
+      h2 Access Log
+        small Host: #{host}
+      table(class="table table-striped")
+        thead
+          tr 
+            td Date
+            td Log ID
+        tbody
+        each entry in log
+          tr 
+            td #{entry.date}
+            td #{entry._id}
