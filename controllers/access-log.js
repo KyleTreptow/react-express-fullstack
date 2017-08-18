@@ -1,3 +1,5 @@
+var db_connect = require('../db/connect');
+
 // mongoose
 var mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
@@ -6,11 +8,10 @@ mongoose.Promise = global.Promise;
 // try to redeclare a model.
 var storedModels = {};
 
-var userName = 'kyletreptow';
-var userPass = 'Spitfire7&';
-var userDB = 'ds149373.mlab.com:49373/treptow-express';
-var mongoHost = userName+':'+userPass+'@'+userDB;
-
+var dbUserName = 'kyletreptow';
+var dbUserPass = 'Spitfire7&';
+var dbUserDB = 'ds149373.mlab.com:49373/treptow-express';
+var mongoHost = dbUserName+':'+dbUserPass+'@'+dbUserDB;
 
 /////////////////////////////
 // Provide Endpoint
@@ -46,8 +47,6 @@ exports.provide_endpoint = function(req, res, next) {
 
   })
 }
-
-
 
 /////////////////////////////
 // Display Log
