@@ -12,6 +12,6 @@ router.get('/', function(req, res, next) {
 // router.get('/mongo-db', access_log_controller.display_log);
 
 /* GET API Endpoint */
-router.get('/api', access_log_controller.provide_endpoint);
+router.get('/accesslog', access_log_controller.provide_endpoint);
 
 module.exports = router;
