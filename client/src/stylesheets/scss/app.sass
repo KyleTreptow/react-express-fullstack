@@ -33,8 +33,13 @@ h1, h2, h3, h4, h5
   padding: 60px 0
 
 .app-intro
-  font-size: large
+  font-size: 18px
+  margin-bottom: 45px
 
-@media screen and (max-width: $mq-xs)
-  .table-responsive
-    overflow-x: scroll
+.table-responsive
+  thead
+    background: $clr-accent
+    font-weight: 600
+  @media screen and (max-width: $mq-xs)
+    .table-responsive
+      overflow-x: scroll

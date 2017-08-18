@@ -18,10 +18,14 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   padding: 60px 0; }
 
 .app-intro {
-  font-size: large; }
+  font-size: 18px;
+  margin-bottom: 45px; }
 
+.table-responsive thead {
+  background: #61DAFB;
+  font-weight: 600; }
 @media screen and (max-width: 767px) {
-  .table-responsive {
+  .table-responsive .table-responsive {
     overflow-x: scroll; } }
 
 /*# sourceMappingURL=app.css.map */
