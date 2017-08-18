@@ -5,7 +5,8 @@
   "scripts": {
     "start": "concurrently \"yarn server\" \"yarn client\" ",
     "server": "nodemon ./bin/www",
-    "client": "cd client && yarn start"
+    "client": "cd client && yarn start",
+    "sass-watch": "cd client/src && sass --watch stylesheets/scss:stylesheets"
   },
   "dependencies": {
     "body-parser": "~1.17.1",
