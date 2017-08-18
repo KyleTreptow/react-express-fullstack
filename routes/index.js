@@ -14,7 +14,9 @@ router.get('/', function(req, res, next) {
 
 /* GET API Endpoint */
 router.get('/accesslog', access_log_controller.provide_endpoint);
+
 router.get('/blog', blog_controller.blog_get_endpoint);
 router.post('/blog', blog_controller.blog_post_endpoint);
+// router.delete('/blog/post', blog_controller.blog_delete_endpoint);
 
 module.exports = router;

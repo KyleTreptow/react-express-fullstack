@@ -3,7 +3,6 @@ import logo from '../logo.svg';
 
 class AppHeader extends Component {
   render() {
-    console.log('render header!');
     return (
         <div className="app-header">
           <div className="container">

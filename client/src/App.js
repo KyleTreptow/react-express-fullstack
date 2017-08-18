@@ -16,7 +16,7 @@ class App extends Component {
     this.setState({ panel: panel });
   };
   render() {
-    console.log('render!');
+    console.log('render app!');
     return (
       <div className="app">
         <AppHeader changePanel={this.changePanel}></AppHeader>

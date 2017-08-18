@@ -8,7 +8,6 @@ import PanelMisc from './PanelMisc';
 
 class AppPanel extends Component {
   render() {
-    console.log('render header!');
     if(this.props.panel === 'Home'){
       return <PanelHome></PanelHome>;
     } else if (this.props.panel === 'Blog'){
