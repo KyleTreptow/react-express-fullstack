@@ -21,7 +21,7 @@ class App extends Component {
       <div className="app">
         <AppHeader changePanel={this.changePanel}></AppHeader>
         <section className="content-section">
-          <AppPanel panel={this.state.panel}></AppPanel>
+          <AppPanel panel={this.state.panel} changePanel={this.changePanel} ></AppPanel>
         </section>
       </div>
     );

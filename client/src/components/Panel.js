@@ -12,7 +12,7 @@ class AppPanel extends Component {
     if(this.props.panel === 'Home'){
       return <PanelHome></PanelHome>;
     } else if (this.props.panel === 'Blog'){
-      return <PanelBlog></PanelBlog>;
+      return <PanelBlog changePanel={this.props.changePanel}></PanelBlog>;
     } else if (this.props.panel === 'Access Log'){
       return <PanelLog></PanelLog>;
     } else if (this.props.panel === 'Misc.'){

@@ -12,8 +12,21 @@ class PanelBlog extends Component {
   }
   handleSubmit(e) {
     e.preventDefault();
-    console.log(' Submit Title: '+this.state.title+', Submit Content: '+this.state.content);
-
+    var that = this;
+    console.log(' Submit Title: '+this.state.title+', Submit Content: '+this.state.content+'!!!');
+    fetch('blog', {
+        method: 'post',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({'title': this.state.title, 'content': this.state.content, })
+    })
+    .then(function (data) {
+      console.log('Request succeeded with JSON response', data);
+      // Go Home!
+      that.props.changePanel('Home');
+    })
+    .catch(function (error) {
+      console.log('Request failed', error);
+    });
   };
   handleChange(e) {
     const target = e.target;
@@ -28,7 +41,7 @@ class PanelBlog extends Component {
     return (
         <section className="panel">
           <div className="container">
-            <h2>Panel: Blog Panel</h2>
+            <h2>Make a Blog Post</h2>
             <div className="row">
               <div className="col-xs-12 col-sm-6 col-sm-offset-3">
                 <div className="well form-well">
