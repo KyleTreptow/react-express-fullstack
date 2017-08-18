@@ -6,7 +6,9 @@ mongoose.Promise = global.Promise;
 // try to redeclare a model.
 var storedModels = {};
 
+/////////////////////////////
 // Display Log
+/////////////////////////////
 exports.display_log = function(req, res, next) {
   var mongoHost = 'apollo:interactive@ds129143.mlab.com:29143/apollo_demo';
   var promise = mongoose.connect(
@@ -40,7 +42,9 @@ exports.display_log = function(req, res, next) {
 }
 
 
+/////////////////////////////
 // Provide Endpoint
+/////////////////////////////
 exports.provide_endpoint = function(req, res, next) {
   var mongoHost = 'apollo:interactive@ds129143.mlab.com:29143/apollo_demo';
   var promise = mongoose.connect(
