@@ -20,7 +20,7 @@ class PanelHome extends Component {
     this.loadData();
   };
   render() {
-    console.log('render access log panel!');
+    console.log('render access home panel!');
     if(this.state.loading === true) {
       return (
         <section className="panel">
@@ -41,20 +41,22 @@ class PanelHome extends Component {
                 <table className="table table-striped">
                   <thead>
                     <tr>
+                      <td>#</td>
                       <td>Blog Title</td>
                       <td>Blog Content</td>
                       <td>Blog Date</td>
-                      <td>Blog ID</td>
+                      {/* <td>Blog ID</td> */}
                     </tr>
                   </thead>
                   <tbody>
                   {logdata.map(function(data, i){
                     return(
-                      <tr key={i}>
+                      <tr key={data._id}>
+                        <td>{i+1}</td>
                         <td>{data.title}</td>
                         <td>{data.content}</td>
                         <td>{data.date}</td>
-                        <td>{data._id}</td>  
+                        {/* <td>{data._id}</td> */}
                       </tr>
                     );
                   })}

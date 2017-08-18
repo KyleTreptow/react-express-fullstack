@@ -54,7 +54,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   padding: 90px 30px; }
   .loading-spinner .loader {
     color: #61DAFB;
-    font-size: 60px;
+    font-size: 75px;
     text-indent: -9999em;
     overflow: hidden;
     width: 1em;
